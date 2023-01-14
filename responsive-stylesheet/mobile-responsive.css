@@ -1,0 +1,130 @@
+@media screen  and (max-width: 576px){
+
+
+
+    /* header section start here */
+    header{
+        height: 150vh;
+    }
+    header nav{
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 42px;
+
+    }
+    header nav ul{
+        flex-direction: column;
+        margin-top: 22px;
+    }
+    header nav ul li{
+        margin: 8px 0px;
+    }
+    .header-content{
+        width: 80%;
+        margin-top: 220px;
+    }
+    .header-content h1{
+        font-size: 38px;
+    }
+    .header-content p{
+        text-align: justify;
+        font-size: 14px;
+    }
+    .img-area{
+        height: 60vh;
+    }
+    /* header section end hear */
+
+
+
+
+
+
+    /* feature-first-section-start here */
+    .first--feture{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+    }
+    .first--feture .content-area{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+    .first--feture .content-area p{
+        text-align: right;
+    }
+    /* feature-first-section-end here */
+
+
+
+
+
+
+     /* feature-second-section-start here */
+     .secoond-feature{
+        width: 80%;
+     }
+    .secoond-feature{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-info{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .content-info .card h3{
+        font-size: 14px;
+    }
+    .secoond-feature button{
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -50px;
+    }
+    .img-area{
+        margin-top: 24px;
+    }
+    /* feature-second-section-end here */
+
+
+    /* some facts section start here */
+    .some-facts .cards{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 20px;
+    }
+    /* some facts section end here */
+
+
+    /* sponsor section start here */
+    .sponsor{
+        text-align: right;
+        align-items: flex-end;
+    }
+    .sponsor-images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+ .sponsor .img{
+    margin: 16px 0px;
+    width: 150px;
+ } 
+    /* sponsor section end here */
+
+    /* footer section start here */
+    footer{
+        margin-top: 50px;
+    }
+    footer p{
+        font-size: 12px;
+        margin: 20px;
+    }
+    /* footer section end here */
+
+
+
+
+
+}
