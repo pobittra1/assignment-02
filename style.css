@@ -113,6 +113,9 @@ header nav ul li a{
 /* header section end here */
 
 
+
+
+
 /* first-feature start here */
 .first--feture{
     width: 70%;
@@ -167,6 +170,7 @@ header nav ul li a{
     border: none;
     background-color: var(--primary-color);
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 /* first-feature end here */
 
@@ -294,10 +298,15 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
     padding: 30px 24px;
-    transition: transform 0.5s , background-color 0.5s , color 0.5s , border 0.5s;
+    cursor: pointer;
+    transition: transform 0.3s , background-color 0.5s , color 0.5s , border 0.5s;
 }
 .some-facts .cards .card img{
     width: 28px;
+    transition: transform 0.5s;
+}
+.some-facts .cards .card:hover img{
+    transform: rotate(-360deg);
 }
 .some-facts .cards .card h1{
     font-size: 24px;
@@ -316,7 +325,7 @@ header nav ul li a{
 }
 
 .some-facts .cards .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.08);
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: none;
@@ -382,6 +391,158 @@ footer p{
     margin: 100px 0px;
 }
 /* footer section end here */
+
+
+
+
+
+/* additional section start here */
+.additional-section{
+    width: 70%;
+    margin: 150px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.1),
+                        0px 0px 50px 8px rgba(0,0,0,0.1);
+    position: relative;
+
+}
+.side-bar{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 120px;
+    height: 100%;
+    background-color: rgb(255, 144, 14 , 0.8);
+    z-index: -1;
+}
+
+.text-bar{
+    position: absolute;
+    top: 35px;
+    left: -180px;
+    visibility: hidden;
+    transition: left 1s , visibility 0.1s;
+    
+}
+.additional-section:hover .text-bar{
+    left: 30px;
+    visibility: visible;
+}
+
+.additional-section .left-content{
+    padding: 100px 0px 100px 100px;    
+}
+.additional-section .left-content h1{
+    font-size: 28px;
+    font-weight: 1000;
+    text-transform: capitalize;
+}
+.additional-section .left-content p{
+    font-size: 14px;
+    font-weight: 600px;
+    margin: 16px 0px;
+}
+
+.additional-section .left-content form input{
+    display: block;
+    margin: 16px 0px;
+    padding: 16px 0px;
+    padding-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid rgb(66, 66, 66, 0.4);
+    text-transform: capitalize;
+    outline: none;
+    width: 100%;
+    /* font-weight: 600; */
+}
+.additional-section .left-content form input[type = submit]{
+    margin: 32px 0px;
+    font-size: 14px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: var(--dark-light);
+    cursor: pointer;
+}
+
+
+.additional-section .right-content{
+    padding: 150px 0px 150px 100px;
+}
+.additional-section .right-content .inner-content{
+    background-color: var(--dark-light);
+    position: relative;
+}
+.side-corner{
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: -16px;
+    width: 2px;
+    height: 12px;
+    background-color: rgb(255, 144, 14 , 0.8);
+    visibility: hidden;
+    transition: top 0.5s , display 0.5s;
+}
+.additional-section:hover .side-corner{
+    top: -12px;
+    visibility: visible;
+}
+
+
+.inner-content h1{
+    padding: 40px 0px 8px 30px;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+.inner-content div{
+    padding: 8px 0px 8px 30px;
+    display: flex;
+    align-items: center;
+}
+.inner-content img{
+    margin-right: 10px;
+  
+}
+.inner-content div span{
+    font-size: 12px;
+    color: var(--secondary-color);
+}
+.inner-content:last-child{
+    padding-bottom: 34px;
+}
+.corner-div{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid var(--dark-light);
+    transform: rotate(45deg);
+    transition: transform .5s;
+}
+.additional-section:hover .corner-div{
+    transform: translateX(300px) rotate(-45deg);
+}
+.corner-div::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: var(--dark-light);
+    border-radius: 50%;
+
+}
+/* additional section end here */
 
 
 

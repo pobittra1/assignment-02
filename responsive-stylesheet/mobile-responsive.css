@@ -115,13 +115,41 @@
 
     /* footer section start here */
     footer{
-        margin-top: 50px;
+        width: 90%;
     }
     footer p{
         font-size: 12px;
         margin: 20px;
     }
     /* footer section end here */
+
+
+
+    /* additional section start here */
+    .additional-section{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .additional-section .left-content{
+        padding: 100px 20px 20px 20px;    
+    }
+    .additional-section .right-content{
+        padding: 20px 20px 50px 20px;
+    }
+    .side-bar{
+        top: 85%;
+        width: 100%;
+        height: 12%;
+    }
+    .side-corner{
+        top: 0px;
+        left: -100px;
+        transition: left 0.3s;
+    }
+    .additional-section:hover .side-corner{
+        left: -16px;
+    }
+    /* additional section end here */
 
 
 

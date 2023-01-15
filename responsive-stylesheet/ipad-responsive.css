@@ -1,0 +1,46 @@
+@media  screen and (min-width: 577px) and (max-width: 992px) {
+    header{
+        height: 105vh;
+    }
+    .header-content{
+        margin-top: 220px;
+    }
+
+
+
+    .first--feture{
+        margin-top: 150px;
+    }
+    .first--feture .img-area{
+        grid-gap: 0px;
+        grid-column-gap: 12px;
+    }
+    
+
+
+    .some-facts .cards{
+        grid-gap: 30px;
+    }
+    .some-facts .cards .card{
+        padding: 34px 28px;
+    }
+
+
+
+
+
+    .sponsor{
+        width: 80%;
+        position: relative;
+    }
+    .sponsor-images{
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 150px;
+    }
+    .sponsor .img:nth-child(4){
+        position: absolute;
+        bottom: 50px;
+        left: 40%;
+        transform: translateX(-50%);
+     }
+}
